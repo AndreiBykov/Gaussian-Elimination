@@ -35,8 +35,6 @@ void deleteMatrixOfDouble(double **matrix, int size);
 
 void deleteVectorOfDouble(double *vector);
 
-void printVector(double *x, int size);
-
 void *thread_func(void *args);
 
 int main(int argc, char **argv) {
@@ -225,12 +223,6 @@ void printLinearSystem(double **A, double *B, int size) {
         std::cout << "|| " << B[i] << std::endl;
     }
     std::cout << std::endl;
-}
-
-void printVector(double *x, int size) {
-    for (int i = 0; i < size; ++i) {
-        std::cout << x[i] << std::endl;
-    }
 }
 
 double **createLinearSystemCoefficients(int size) {
